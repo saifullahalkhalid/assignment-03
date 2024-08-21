@@ -8,14 +8,66 @@
      
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome cdn -->
+<script src="https://kit.fontawesome.com/0a396fa662.js" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
     <!-- header section -->
-     <header>
+     <header class="container mx-auto pb-24 ">
         <!-- navbar  -->
-
+        <div class="navbar bg-base-100 mx-4">
+            <div class="navbar-start">
+            <a class="bg-[#ABEF5F]  w-5 h-5 p-4 flex items-center justify-center rounded-full -rotate-45 text-sm md:text-lg lg:text-xl"><i class="fa-solid fa-arrow-right-long"></i></a>
+              <a class="btn btn-ghost text-3xl font-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+              <ul class="menu menu-horizontal px-1 opacity-70">
+                <li class="hover:text-red-600 "><a>Home</a></li>
+                <li class="hover:text-red-600 "><a>Service</a></li>
+                <li class="hover:text-red-600 "><a>Portfolio</a></li>
+                <li class="hover:text-red-600 "><a>Blog</a></li>
+                <li class="hover:text-red-600 "><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-4">
+                <a class=" hidden  md:block " ><i class="fa-solid fa-magnifying-glass btn-circle flex  border items-center justify-center   bg-white  "></i></a>
+                <a class="hidden  md:block"><i class="fa-solid fa-cart-shopping btn-circle  border items-center justify-center flex   bg-white"></i></a>
+              <a class="btn bg-[#ABEF5F] rounded-3xl text-xl font-bold    hidden md:block   ">Book Consult <i class="fa-solid fa-arrow-right-long bg-black py-2 px-2 rounded-full -rotate-45 text-white mt-1"></i></a>
+              <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn-circle border items-center justify-center flex  bg-white lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5  "
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <!-- banner part -->
+           <div class="mx-4">
+            <!-- img-part -->
+<div class=""> 
+    <img src="./assets/banner.png" alt="" class="mx-auto">
+</div>
+<!-- text-part -->
+<div class="text-center space-y-6">
+    <h1 class=" text-3xl font-bold md:text-4xl lg:text-6xl  text-[#212121]">A barn house of this design has a  striking appearance</h1>
+    <p class="text-gray-700">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+    <button class="btn w-full md:w-40 lg:w-44 bg-[#ABEF5F80] rounded-3xl">View Details  <a class="bg-[#ABEF5F]  w-5 h-5 p-4 flex items-center justify-center rounded-full -rotate-45 text-sm md:text-lg lg:text-xl"><i class="fa-solid fa-arrow-right-long"></i></a></button>
+    
+</div>
+           </div>
      </header>
      <!-- main section -->
       <main>
@@ -23,7 +75,7 @@
       </main>
       <!-- footer section -->
        <footer>
-        
+
        </footer>
     
 </body>
